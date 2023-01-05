@@ -7,7 +7,7 @@ function Task(props) {
             <View style={styles.square}></View>
             <Text style = {styles.textItem}>{props.text}</Text>
         </View>
-        
+        <View style={styles.circular}></View>
     </View>
   )
 }
@@ -34,9 +34,20 @@ const styles = StyleSheet.create({
         backgroundColor: '#558cf6',
         opacity:0.4,
         borderRadius: 5,
+        marginRight:15
+    },
+    textItem: {
+        maxWidth: '80%',
+
+    },
+    circular:{
+        width:12,
+        height:12,
+        borderColor:'#55bcfe',
+        borderWidth:2,
+        borderRadius:5,
+
     }
-    textItem:{
-        
-    }
+
 })
 export default Task
